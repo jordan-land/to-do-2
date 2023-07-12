@@ -29,11 +29,11 @@ ob_start();
 
 switch ($route[0]) {
     case Dispatcher::NOT_FOUND:
-        status_header(404);
+        http_response_code(404);
         break;
 
     case Dispatcher::METHOD_NOT_ALLOWED:
-        status_header(405);
+        http_response_code(405);
         break;
 
     case Dispatcher::FOUND:
