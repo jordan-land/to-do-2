@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do List</h1>
+    <form class="add-todo" id="createTodoForm">
+      <input class="todo-field" type="text" id="labelInput" placeholder="Label" required />
+      <input type="date" id="dueDateInput" />
+      <button type="submit"><i class="fas fa-plus"></i> Add</button>
+    </form> 
+  </div>
+  <div class="container">
+
+    <!-- This is the list of to-do items that have not been marked as completed: -->
+<h2>In Progress</h2>
+  <ul id="pendingList"></ul>
+</div>
+<div class="container">
+
+  <!-- This is the list of to-do items that have been marked as completed  -->
+  <h2>Completed</h2>
+  <ul id="completedList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
